@@ -67,3 +67,15 @@ do
     echo "Invalid input"
 fi
 done
+
+# the result checking process
+read -p "Enter your number: " number
+
+if [[ $number -ge 80 ]]; then
+    echo "You got A+"
+elif [[ $number -ge 40 ]]; then
+    echo "You pass the exam"
+else
+    echo "You fail the exam"
+fi
+sleep 5
