@@ -30,4 +30,40 @@ done
 read -t 5 -p "###### loading ######" time
 echo $time
 
-read 
+#this is the name of using first name
+while true
+do
+  read -p "Enter your first name: " name
+  if [[ "$name" =~ ^[a-zA-z]+$ ]]; then
+     echo "you inputed your name"
+     break
+  else
+    echo "Invalid input"
+fi
+done
+
+#this is the section of using second name
+read -p "Enter your last name: " name2
+while true
+do
+  read -p "Enter your last name: " name2
+  if [[ "$name2" =~ ^[a-zA-z]+$ ]]; then
+     echo "you inputed your name"
+     break
+  else
+    echo "Invalid input"
+fi
+done
+
+#this is the section using class ID 
+read -p "Enter your ClassID: " ID
+while true
+do
+  read -p "Enter your last name: " ID
+  if [[ "$ID" =~ ^[0-9]+$ ]]; then
+     echo "you inputed your ID"
+     break
+  else
+    echo "Invalid input"
+fi
+done
