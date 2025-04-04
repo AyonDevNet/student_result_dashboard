@@ -1,6 +1,6 @@
 #!/bin/bash
 
-echo "**** Welcome to Result Dash Board ****"
+echo "**** Welcome to Result Checker ****"
 echo
 echo "Please Login"
 #user's input area
@@ -18,11 +18,16 @@ done
 # the password section
 while true
 do
-  read -p "Enter you username : " passwd 
-  if [[ "$passwd" =~ ^[admin]+$ ]]; then
+  read -p "Enter you password : " passwd 
+  if [[ "$passwd" =~ ^[1234]+$ ]]; then
     echo "loging Sucessfully"
     break
 else
   echo "Invalid password"
 fi
 done
+
+read -t 5 -p "###### loading ######" time
+echo $time
+
+read 
