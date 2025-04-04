@@ -56,10 +56,10 @@ fi
 done
 
 #this is the section using class ID 
-read -p "Enter your ClassID: " ID
+
 while true
 do
-  read -p "Enter your last name: " ID
+  read -p "Enter your class ID: " ID
   if [[ "$ID" =~ ^[0-9]+$ ]]; then
      echo "you inputed your ID"
      break
