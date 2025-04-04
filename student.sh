@@ -15,4 +15,14 @@ else
 fi
 done
 
-
+# the password section
+while true
+do
+  read -p "Enter you username : " passwd 
+  if [[ "$passwd" =~ ^[admin]+$ ]]; then
+    echo "loging Sucessfully"
+    break
+else
+  echo "Invalid password"
+fi
+done
