@@ -16,14 +16,3 @@ fi
 done
 
 
-while true
-do
-    read -p "Enter a number: " input
-    if [[ "$input" =~ ^[123]+$ ]]; then
-        echo "You entered a valid number: $input"
-        break
-    else
-        echo "Please enter a valid number."
-    fi
-done
-
